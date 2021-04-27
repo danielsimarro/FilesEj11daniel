@@ -142,6 +142,7 @@ public class App {
         app1.setDescripcion(descripcionAleatoria());
         app1.setKb(kbAleatoria());
         app1.setFecha(fechaAleatoria());
+        contador++;
         
         return app1;
     }
