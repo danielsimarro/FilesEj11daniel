@@ -45,9 +45,15 @@ public class Programa {
 
         ServicioFicheroJSON generarFicheroJSON = new ServicioFicheroJSON();
         generarFicheroJSON.generaJson(listaApp, "./appsjson/aplicaciones.json");
+        
+        //Para crear un fichero xml primero crearemos un catalogo y le pasaremos una lista de app y el nombre del catalogo
+        CatalogoAplicaciones catalogo = new CatalogoAplicaciones();
+        catalogo.setListaApp(listaApp);
+        catalogo.setDescripcion("Mi catalogo");
 
-        //ServicioFicheroXML generarFicheroXML = new ServicioFicheroXML();
-        //generarFicheroXML.generaXml(listaApp, "./appsxml/aplicaciones.xml");
+        ServicioFicheroXML generarFicheroXML = new ServicioFicheroXML();
+        generarFicheroXML.generaXml(catalogo, "./appsxml/aplicaciones.xml");
+        
         //Recorremos el bucle y vamos extrayendo los objetos de las posiciones y generando ficheros
         for (int i = 0; i < listaApp.size(); i++) {
 

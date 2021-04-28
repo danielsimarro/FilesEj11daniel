@@ -1,0 +1,20 @@
+{
+  "codigo" : 12,
+  "nombre" : "app12k",
+  "descripcion" : "Entretenimiento",
+  "kb" : 990.6,
+  "fecha" : {
+    "year" : 2022,
+    "month" : "SEPTEMBER",
+    "monthValue" : 9,
+    "dayOfMonth" : 5,
+    "chronology" : {
+      "id" : "ISO",
+      "calendarType" : "iso8601"
+    },
+    "era" : "CE",
+    "dayOfYear" : 248,
+    "dayOfWeek" : "MONDAY",
+    "leapYear" : false
+  }
+}

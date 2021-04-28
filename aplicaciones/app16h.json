@@ -1,0 +1,20 @@
+{
+  "codigo" : 16,
+  "nombre" : "app16h",
+  "descripcion" : "Conducción",
+  "kb" : 448.77,
+  "fecha" : {
+    "year" : 2020,
+    "month" : "DECEMBER",
+    "monthValue" : 12,
+    "dayOfMonth" : 26,
+    "chronology" : {
+      "id" : "ISO",
+      "calendarType" : "iso8601"
+    },
+    "era" : "CE",
+    "dayOfYear" : 361,
+    "dayOfWeek" : "SATURDAY",
+    "leapYear" : true
+  }
+}

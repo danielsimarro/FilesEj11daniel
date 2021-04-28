@@ -1,0 +1,20 @@
+{
+  "codigo" : 50,
+  "nombre" : "app50l",
+  "descripcion" : "Deporte",
+  "kb" : 358.42,
+  "fecha" : {
+    "year" : 2020,
+    "month" : "MARCH",
+    "monthValue" : 3,
+    "dayOfMonth" : 18,
+    "chronology" : {
+      "id" : "ISO",
+      "calendarType" : "iso8601"
+    },
+    "era" : "CE",
+    "dayOfYear" : 78,
+    "dayOfWeek" : "WEDNESDAY",
+    "leapYear" : true
+  }
+}

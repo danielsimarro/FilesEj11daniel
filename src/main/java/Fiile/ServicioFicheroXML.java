@@ -18,11 +18,11 @@ import javax.xml.bind.Marshaller;
 public class ServicioFicheroXML {
 
     //Metodo que genera un archivo XML pasandole una lista y el nombre del fichero a crear
-    public void generaXml(ArrayList<App> listaApp, String nombre) throws JAXBException{
+    public void generaXml(CatalogoAplicaciones catalogo, String nombre) throws JAXBException{
 
         // Crea el contexto JAXB. Se encarga de definir los objetos 
         // que vamos a guardar. 
-        JAXBContext contexto = JAXBContext.newInstance(App.class);
+        JAXBContext contexto = JAXBContext.newInstance(CatalogoAplicaciones.class);
 
         // El contexto JAXB permite crear un objeto Marshaller, que sirve para
         // generar la estructura del fichero XML 
@@ -40,7 +40,7 @@ public class ServicioFicheroXML {
         // crear la salida de serialización
         
         // Volcado al fichero xml
-        serializador.marshal(listaApp, new File(nombre));
+        serializador.marshal(catalogo, new File(nombre));
         
     }
 }

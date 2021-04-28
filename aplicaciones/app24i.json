@@ -1,0 +1,20 @@
+{
+  "codigo" : 24,
+  "nombre" : "app24i",
+  "descripcion" : "Finanzas",
+  "kb" : 677.3,
+  "fecha" : {
+    "year" : 2020,
+    "month" : "FEBRUARY",
+    "chronology" : {
+      "id" : "ISO",
+      "calendarType" : "iso8601"
+    },
+    "era" : "CE",
+    "monthValue" : 2,
+    "dayOfMonth" : 9,
+    "dayOfYear" : 40,
+    "dayOfWeek" : "SUNDAY",
+    "leapYear" : true
+  }
+}

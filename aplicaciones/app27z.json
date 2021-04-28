@@ -1,0 +1,20 @@
+{
+  "codigo" : 27,
+  "nombre" : "app27z",
+  "descripcion" : "Educación",
+  "kb" : 788.66,
+  "fecha" : {
+    "year" : 2023,
+    "month" : "JULY",
+    "chronology" : {
+      "id" : "ISO",
+      "calendarType" : "iso8601"
+    },
+    "era" : "CE",
+    "monthValue" : 7,
+    "dayOfMonth" : 9,
+    "dayOfYear" : 190,
+    "dayOfWeek" : "SUNDAY",
+    "leapYear" : false
+  }
+}

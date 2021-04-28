@@ -6,16 +6,23 @@
 package Fiile;
 
 import java.time.LocalDate;
+import java.util.Objects;
 import java.util.Random;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
 
 
-/**
- *
- * @author NitroPc
- */
-public class App {
 
-    //Atributos de la clase App
+    // Anotación @XmlRootElement, nombre de la etiqueta XML raíz.
+    @XmlRootElement(name = "App")
+    // Anotación @XmlAccesorType define el elemento que usará JAXB durante el 
+    // procesamiento de datos (en este caso por atributo)
+    @XmlAccessorType(XmlAccessType.FIELD)
+
+    public class App {
+
+    //Atributos de la clase App    
     private int codigo;
     private String nombre;
     private String descripcion;
@@ -90,6 +97,50 @@ public class App {
     public static void setContador(int contador) {
         App.contador = contador;
     }
+    
+    //Metodo hascode y eguals
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 89 * hash + this.codigo;
+        hash = 89 * hash + Objects.hashCode(this.nombre);
+        hash = 89 * hash + Objects.hashCode(this.descripcion);
+        hash = 89 * hash + (int) (Double.doubleToLongBits(this.kb) ^ (Double.doubleToLongBits(this.kb) >>> 32));
+        hash = 89 * hash + Objects.hashCode(this.fecha);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final App other = (App) obj;
+        if (this.codigo != other.codigo) {
+            return false;
+        }
+        if (Double.doubleToLongBits(this.kb) != Double.doubleToLongBits(other.kb)) {
+            return false;
+        }
+        if (!Objects.equals(this.nombre, other.nombre)) {
+            return false;
+        }
+        if (!Objects.equals(this.descripcion, other.descripcion)) {
+            return false;
+        }
+        if (!Objects.equals(this.fecha, other.fecha)) {
+            return false;
+        }
+        return true;
+    }
+    
 
     //Metodo to String para imprimir los atributos del objeto  
     @Override
